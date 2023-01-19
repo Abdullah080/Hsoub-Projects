@@ -1,2 +1,2 @@
-# Hsoub-Projects
+# Hsoub Projects
 These projects from Hsoub academy
