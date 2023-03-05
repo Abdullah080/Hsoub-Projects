@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Cairo", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+header {
+  background-image: url(../images/bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  /* me */
+  overflow: hidden;
+}
+header .overlay {
+  background-color: rgba(239, 71, 58, 0.8);
+  padding-top: 90px;
+  position: relative;
+}
+header .overlay .header-block {
+  margin-top: 120px;
+}
+header .overlay .header-brand {
+  margin-bottom: 50px;
+}
+header .overlay .header-text h1 {
+  color: white;
+  font-size: 30x;
+  line-height: 38px;
+  margin-bottom: 60px;
+}
+header .overlay .header-text p {
+  color: white;
+  font-size: 18px;
+  line-height: 33px;
+  margin-bottom: 85px;
+}
+header .overlay .header-buttons a img {
+  width: 250px;
+}
+header .overlay .header-buttons a:last-child img {
+  height: 65px;
+}
+header .overlay .header-img {
+  max-width: 100%;
+  position: absolute;
+  bottom: -210px;
+}
+
+section.feature {
+  padding: 80px 0;
+}
+section.feature .features {
+  margin-top: 90px;
+}
+section.feature .text-left {
+  direction: ltr;
+}
+section.feature .d-flex {
+  margin-bottom: 70px;
+}
+section.feature .features i {
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  color: white;
+  background-color: #ef473a;
+  text-align: center;
+  display: block;
+  border-radius: 2px;
+}
+section.feature .features h5 {
+  font-size: 24px;
+  line-height: 75px;
+  color: #080808;
+}
+section.feature .features h5 {
+  font-size: 24px;
+  margin-bottom: 12px;
+  color: #080808;
+}
+section.feature .features p {
+  font-size: 15px;
+  line-height: 20px;
+  color: #757474;
+}
+section.feature .features-img img {
+  width: 80%;
+}
