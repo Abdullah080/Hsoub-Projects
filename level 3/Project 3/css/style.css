@@ -125,7 +125,6 @@ section.gallery .gallery-title h3 {
 }
 section.gallery .gallery-link {
   position: relative;
-  /* ??? */
   display: block;
 }
 section.gallery .gallery-link img {
@@ -161,13 +160,11 @@ section.gallery .gallery-work .gallery-overlay {
   height: 100vh;
   z-index: 20;
   padding: 5% 10%;
-  /* opacity: 0; */
   visibility: hidden;
   margin-top: -100vh;
   transition: all 1s ease;
 }
 section.gallery .gallery-work .gallery-overlay:target {
-  /* opacity: 1; */
   visibility: visible;
   margin-top: 0;
 }

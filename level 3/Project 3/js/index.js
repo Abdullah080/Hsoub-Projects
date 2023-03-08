@@ -45,4 +45,5 @@ window.onload = function () {
   });
 })();
 
+// Get current year
 document.getElementById("fullyear").innerHTML = new Date().getFullYear();
