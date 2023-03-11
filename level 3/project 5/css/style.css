@@ -1,0 +1,292 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --main-color: #0575e6;
+}
+body {
+  font-family: "Cairo", sans-serif;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+nav ul li a.nav-link {
+  color: #fff;
+  font-size: 16px;
+  line-height: 60px;
+  padding: 0 24px;
+  transition: all 0.5s ease;
+}
+nav ul li a.nav-link:hover,
+nav ul li a.nav-link.active {
+  color: var(--main-color);
+  background-color: #fff;
+}
+/* noTransparent */
+nav.noTransparent {
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+}
+nav.noTransparent ul li a.nav-link {
+  color: var(--main-color);
+}
+nav.noTransparent ul li a.nav-link:hover,
+nav.noTransparent ul li a.nav-link.active {
+  color: #fff;
+  background-color: var(--main-color);
+}
+header {
+  background-image: url(../images/bg-1.jpg);
+  background-position: center;
+  background-size: cover;
+  min-height: 500px;
+}
+header .overlay {
+  background-color: rgba(5, 117, 230, 0.9);
+  color: #fff;
+  padding: 40px 60px;
+  transform: translateY(20%);
+}
+header .overlay img {
+  border: 5px solid #73ade7;
+  margin-bottom: 20px;
+  border-radius: 50%;
+}
+header .overlay h1 {
+  font-size: 36px;
+  line-height: 50px;
+  margin-bottom: 20px;
+  color: #f9f9f9;
+}
+header .overlay h1 span {
+  font-size: 24px;
+}
+header .overlay ul {
+  margin-bottom: 40px;
+}
+header .overlay ul li a {
+  margin-bottom: 24px;
+  color: #021b79;
+}
+header .overlay h2 {
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+header .overlay p {
+  font-size: 15px;
+  line-height: 30px;
+  color: #89c4ff;
+  margin-bottom: 40px;
+}
+header .overlay a.cv {
+  font-size: 18px;
+  line-height: 32px;
+  color: #fff;
+  margin-bottom: 40px;
+  text-decoration: none;
+}
+
+section.licence {
+  padding: 200px 0 80px;
+  background-color: #f6fbff;
+}
+section.licence .licence-title {
+  padding-bottom: 30px;
+  position: relative;
+}
+section.licence .licence-title h2 {
+  font-size: 30px;
+  line-height: 50px;
+  color: #196dd1;
+}
+section.licence .licence-title h2::after {
+  content: "";
+  height: 2px;
+  width: 100px;
+  background-color: #196dd1;
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  transform: translateX(50%);
+}
+section.licence .licence-title h2 i {
+  display: block;
+}
+
+section.licence ul.timeline {
+  padding-top: 40px;
+  padding-right: 0;
+  position: relative;
+}
+section.licence ul.timeline::before {
+  content: "";
+  width: 2px;
+  /* ??? */
+  height: 175px;
+  position: absolute;
+  top: 0;
+  right: 50%;
+  transform: translateX(50%);
+  background-color: #196dd1;
+}
+section.licence ul.timeline .timebox {
+  background-color: #fff;
+  border: 2px solid #f4f4f5;
+  padding: 20px 25px;
+  width: 48%;
+  position: relative;
+}
+section.licence ul.timeline .timebox h4 {
+  font-size: 18px;
+  line-height: 30px;
+  color: #555;
+}
+section.licence ul.timeline .timebox h4 span {
+  color: #fff;
+  background-color: #0575e6;
+  padding: 0 5px;
+  margin-left: 25px;
+}
+section.licence ul.timeline .timebox p {
+  font-size: 15px;
+  line-height: 22px;
+  color: #b1b1b1;
+}
+section.licence ul.timeline .timebox::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  color: #fff;
+  position: absolute;
+  border-left: 2px solid #e1e1e1;
+  border-bottom: 2px solid #e1e1e1;
+  top: 5%;
+  left: -10px;
+  transform: rotate(45deg);
+}
+section.licence ul.timeline li {
+  position: relative;
+  margin-bottom: -50px;
+}
+section.licence ul.timeline li::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #196dd1;
+  position: absolute;
+  top: 10%;
+  right: 50%;
+  transform: translateX(50%);
+}
+section.licence ul.timeline li:nth-child(even) {
+  direction: ltr;
+  text-align: left;
+}
+section.licence ul.timeline li:nth-child(even) .timebox h4 span {
+  float: left;
+  margin-left: 0;
+  margin-right: 25px;
+}
+
+section.licence ul.timeline li:nth-child(even) .timebox::after {
+  left: auto;
+  top: 5%;
+  right: -10px;
+  transform: rotate(-135deg);
+}
+section.statistics {
+  background-image: url(../images/bg-2.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+section.statistics .overlay {
+  background-color: rgba(5, 117, 230, 0.7);
+  padding: 150px;
+}
+section.statistics .overlay .stat p {
+  font-size: 24px;
+  line-height: 30px;
+  color: #fff;
+  margin-top: 30px;
+  font-family: sans-serif;
+}
+section.statistics .overlay .stat canvas {
+  background-color: #eef6ff;
+  padding: 10px;
+  border-radius: 50%;
+}
+section.statistics .overlay .stat .circle {
+  position: relative;
+}
+section.statistics .overlay .stat .circle span {
+  position: absolute;
+  color: var(--main-color);
+  font-size: 24px;
+  right: 50%;
+  bottom: 50%;
+  transform: translate(50%, 50%);
+}
+
+section.gallery {
+  padding: 75px 0 90px;
+}
+section.gallery .gallery-title {
+  margin-bottom: 35px;
+}
+section.gallery .gallery-title h2 {
+  font-size: 30px;
+  line-height: 50px;
+  color: var(--main-color);
+}
+section.gallery label {
+  font-size: 18px;
+  line-height: 35px;
+  color: #8f9899;
+  padding: 10px 30px;
+  background-color: #fff;
+  border: 2px solid #e4eeee;
+  border-radius: 2px;
+  cursor: pointer;
+  margin: 0 7px 40px;
+  transition: all 0.5s ease;
+}
+section.gallery label:hover {
+  color: #fff;
+  border: 2px solid var(--main-color);
+  background-color: var(--main-color);
+}
+section.gallery .items .item {
+  margin-bottom: 25px;
+  transition: all 0.5s ease;
+}
+/* ??? */
+#item-type-all:checked ~ .label-type-all,
+#item-type-1:checked ~ .label-type-1,
+#item-type-2:checked ~ .label-type-2,
+#item-type-3:checked ~ .label-type-3 {
+  color: #fff;
+  border: 2px solid var(--main-color);
+  background-color: var(--main-color);
+}
+/* ??? */
+section.gallery .items .item {
+  transform: scale(0.8);
+  opacity: 0.5;
+}
+
+#item-type-all:checked ~ .items .item,
+#item-type-1:checked ~ .items .item.item-type-1,
+#item-type-2:checked ~ .items .item.item-type-2,
+#item-type-3:checked ~ .items .item.item-type-3 {
+  transform: scale(1);
+  opacity: 1;
+}
