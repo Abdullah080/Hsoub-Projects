@@ -1,9 +1,6 @@
-// ========
-// ========
-import "@laylazi/bootstrap-rtl/dist/css/bootstrap-rtl.min.css";
+window.bootstrap = require("bootstrap/dist/js/bootstrap.bundle.js");
+import "bootstrap/dist/css/bootstrap.min.css";
 import "./css/style.css";
-import "bootstrap/dist/js/bootstrap.min.js";
-import "jquery/dist/jquery.min";
-console.log("hello world");
-console.log("hello world 2");
-console.log("hello world 2");
+import "@fortawesome/fontawesome-free/js/all.min.js";
+
+document.querySelectorAll('[data-bs-toggle="tooltip"]').forEach((item) => new bootstrap.Tooltip(item));

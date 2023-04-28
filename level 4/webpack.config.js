@@ -5,17 +5,27 @@ const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 
 module.exports = {
   mode: "development",
+  // mode: "production",
 
-  entry: "./src/index.js",
+  entry: {
+    app: "./src/index.js",
+  },
 
   output: {
     path: path.resolve(__dirname, "dist"),
-    publicPath: '',
     filename: "main.js",
   },
 
   devServer: {
-    static: "./dist",
+    static: {
+      directory: path.join(__dirname, "public"),
+    },
+    open: true,
+    hot: false,
+    port: 1234,
+    devMiddleware: {
+      writeToDisk: true,
+    },
   },
 
   module: {
@@ -23,37 +33,35 @@ module.exports = {
       {
         test: /\.html$/,
         loader: "html-loader",
-        options: {
-          minimize: true,
-        },
       },
 
       {
         test: /\.css$/,
+        exclude: /bootstrap\.min\.css$/i,
         use: [MiniCssExtractPlugin.loader, "css-loader"],
       },
-
-      
+      //
       {
-
-        test: /\.(png|svg|jpeg|gif)$/,
-        use: [
-          {
-            loader: "file-loader", 
-            options: {
-              name: '[name].[ext]', 
-              outputPath: "images",
-            }
-          }
-        ]
+        test: /bootstrap\.min\.css$/i,
+        use: [MiniCssExtractPlugin.loader, "rtlcss-loader"],
       },
-  
-    ],
-  },
 
-  optimization: {
-    minimizer: [new CssMinimizerPlugin()],
-    minimize: true,
+      {
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        type: "asset/resource",
+        generator: {
+          filename: "./images/[name][ext]",
+        },
+      },
+
+      {
+        test: /\.(svg|eot|woff|woff2|ttf)$/i,
+        type: "asset/resource",
+        generator: {
+          filename: "./fonts/[name][ext]",
+        },
+      },
+    ],
   },
 
   plugins: [
@@ -63,5 +71,7 @@ module.exports = {
     }),
 
     new MiniCssExtractPlugin({ filename: "css/style.css" }),
+
+    new CssMinimizerPlugin(),
   ],
 };

@@ -4,19 +4,88 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Webpack</title>
-    <script type="text/html" src="{require('index.js')}"></script>
+    <title>متجر عربي</title>
   </head>
   <body>
-    <!-- file loader is old version -->
     <div class="container-fluid">
       <div class="row">
-        <nav class="navbar">
-          <div class="navbar-header">
-            <h1>hrllo12</h1>
-            <a href="." class="navbar-brand">
-              <img src="./images/adidas.png" alt="متجر عربي" />
-             </a>
+        <nav class="navbar custom-navbar navbar-expand-lg">
+          <div class="container px-0">
+            <div class="navbar-header">
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarCollapse"
+                aria-controls="navbarCollapse"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <a href="#" class="me-5">
+                <img src="./images/logo.png" alt="متجر عربي" />
+              </a>
+            </div>
+            <form class="d-flex">
+              <input type="search" class="form-control custom-form-control" placeholder="كلمة البحث .." />
+              <div class="dropdown">
+                <a href="#" class="nav-link dropdown-toggle custom-btn categories" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> اختر فئة </a>
+                <ul class="dropdown-menu custom-dropdown-menu">
+                  <li>
+                    <div class="checkbox ms-2">
+                      <label>
+                        <input type="checkbox" name="search-category" value="men" />
+                        رجالي
+                      </label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="checkbox ms-2">
+                      <label>
+                        <input type="checkbox" name="search-category" value="women" />
+                        نسائي
+                      </label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="checkbox ms-2">
+                      <label>
+                        <input type="checkbox" name="search-category" value="kids" />
+                        اطفال
+                      </label>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <button type="submit" class="btn search-btn">ابحث</button>
+            </form>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#" aria-current="page">الصفحة الرئسية</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" id="navbarDropdown2" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> اقسام المتجر </a>
+                  <ul class="dropdown-menu custom-dropdown-menu">
+                    <li><a class="dropdown-item" href="#">رجالي</a></li>
+                    <li><a class="dropdown-item" href="#">نسائي</a></li>
+                    <li><a class="dropdown-item" href="#">أطفال</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a href="./search.html" class="nav-link">البحث المتقدم</a>
+                </li>
+                <li class="nav-item">
+                  <a href="./contact.html" class="nav-link">تواصل معنا</a>
+                </li>
+                <li class="mt-2">
+                  <a class="btn-icon btn" id="btn-shopping-cart" href="./checkout.html" data-bs-toggle="tooltip" data-bs-placement="bottom" title="عربة الشراء">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </nav>
       </div>
