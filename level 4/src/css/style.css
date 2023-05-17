@@ -185,5 +185,25 @@ body {
   color: #868686;
   font-size: 38px;
 }
+#store-features {
+  box-shadow: 0 0 15px #eef0ea;
+  background-image: url(../images/bg_features.png);
+  background-repeat: no-repeat;
+  position: relative;
+  top: -30px;
+  /* Width Height */
+  background-size: auto 60%;
+  background-color: white;
+  padding-bottom: 35px;
+  padding-top: 25px;
+  background-position: -10px -20px;
+}
+#store-features .feature > img {
+  height: 30px;
+  margin-bottom: 10px;
+}
+#store-features .feature:not(:last-of-type) {
+  border-left: 1px solid #eef0ea;
+}
 /* Hello */
 /* End Slideshow */
