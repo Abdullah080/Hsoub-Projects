@@ -180,5 +180,10 @@ body {
   top: 235px;
   right: 41%;
 }
+#carousel-featured .carousel-control-next .fa-chevron-left,
+#carousel-featured .carousel-control-prev .fa-chevron-right {
+  color: #868686;
+  font-size: 38px;
+}
 /* Hello */
 /* End Slideshow */
