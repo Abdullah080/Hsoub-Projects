@@ -205,5 +205,35 @@ body {
 #store-features .feature:not(:last-of-type) {
   border-left: 1px solid #eef0ea;
 }
-/* Hello */
 /* End Slideshow */
+
+/* Start Best Seller  */
+.heading {
+  font-size: 24px;
+  margin-bottom: 25px;
+}
+.custom-thumbnail img {
+  height: 250px;
+  max-width: 250px;
+}
+.custom-thumbnail {
+  border: 2px solid #eef0ea;
+  padding: 8px;
+  cursor: pointer;
+}
+.custom-thumbnail:hover {
+  border-color: #53ccd7;
+}
+.custom-thumbnail h4 {
+  font-size: 18px;
+}
+.price {
+  color: #53ccd7;
+}
+.rating {
+  color: #c2c2c2;
+}
+.rating .active {
+  color: #f3af41;
+}
+/* End Best Seller  */
