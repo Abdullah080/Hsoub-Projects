@@ -207,7 +207,7 @@ body {
 }
 /* End Slideshow */
 
-/* Start Best Seller  */
+/* Start Most Sold Products */
 .heading {
   font-size: 24px;
   margin-bottom: 25px;
@@ -236,4 +236,50 @@ body {
 .rating .active {
   color: #f3af41;
 }
-/* End Best Seller  */
+/* .card has position relative from bootstrap */
+.overlay {
+  position: absolute;
+  background-color: rgba(83, 204, 215, 0.5);
+  height: 250px;
+  /* .custom-thumbnail has padding: 8px */
+  width: calc(100% - 16px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+.overlay:hover {
+  opacity: 1;
+}
+.overlay .add-to-cart-btn {
+  background-color: #fff;
+  color: #53ccd7;
+  font-weight: 700;
+}
+.overlay .add-to-cart-btn:hover {
+  background-color: transparent;
+  color: black;
+}
+.custom-thumbnail .sale {
+  padding: 5px 10px;
+  position: absolute;
+  left: 16px;
+  top: 14px;
+}
+.custom-thumbnail .sale::before {
+  content: "-";
+}
+.custom-carousel-indicators2 {
+  bottom: -20% !important;
+}
+.custom-carousel-indicators2 li {
+  width: 13px !important;
+  height: 13px !important;
+  margin: 2px;
+  background-color: #dbdbdb !important;
+}
+.custom-carousel-indicators2 li.active {
+  background-color: #565656 !important;
+}
+/* End Most Sold Products */
