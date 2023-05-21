@@ -316,3 +316,83 @@ body {
   margin-top: 50px;
 }
 /* End International Brands */
+
+/* Start Footer */
+#brand-logos {
+  background-color: #dbeefa;
+  color: #555;
+  padding: 25px 0;
+}
+#brand-logos img {
+  margin-left: 25px;
+  margin-right: 25px;
+  max-height: 100px;
+  max-width: 100px;
+}
+#footer-nav {
+  background-color: #1f1e1e;
+  padding: 50px 0 40px;
+  background-image: url(../images/bg_footer_1.png), url(../images/bg_footer_2.png);
+  background-position: 110% 0, -10% -150%;
+  background-repeat: no-repeat, no-repeat;
+}
+.footer-nav-links {
+  margin: 30px 0;
+}
+.footer-nav-links a {
+  color: #555;
+  font-weight: 700;
+  margin-left: 30px;
+  text-decoration: none !important;
+}
+.newsletter {
+  border-top: 1px solid #292929;
+}
+.newsletter form {
+  max-width: 260px;
+}
+.newsletter form label {
+  color: #555;
+  font-size: 12px;
+  font-weight: 700;
+  margin: 27px 0 16px;
+}
+.newsletter form input {
+  background-color: #313131;
+  border: none;
+  height: 38px;
+  opacity: 0.6;
+}
+.custom-btn-warning {
+  background-color: #f8ad47;
+  border-color: #f8ad47;
+}
+.custom-btn-warning:active,
+.custom-btn-warning:active:focus,
+.custom-btn-warning:active:hover,
+.custom-btn-warning:focus,
+.custom-btn-warning:hover {
+  background-color: #b86d07;
+  border-color: #b86d07;
+}
+.newsletter form button {
+  border-radius: 0;
+  border-bottom-left-radius: 3px;
+  border-top-left-radius: 3px;
+  /* color: inherit; */
+  font-size: 14px;
+  height: 38px;
+  padding: 6px 12px 5px;
+}
+#footer-copyright-social {
+  background-color: #151515;
+  color: #303030;
+  font-weight: 700;
+  padding: 30px 0;
+}
+#footer-copyright-social a {
+  color: #303030;
+  margin: 0 5px;
+  text-decoration: none;
+}
+/* End Footer */

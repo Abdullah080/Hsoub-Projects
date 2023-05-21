@@ -13,3 +13,6 @@ buttons.forEach((buttons) => {
     alert("أضيف المُنتج إلى عربة الشراء");
   });
 });
+
+// Current Year
+document.getElementById("copyright").innerHTML = "جميع الحقوق محفوظة للمتجر سنة" + " " + new Date().getFullYear();
