@@ -396,3 +396,59 @@ body {
   text-decoration: none;
 }
 /* End Footer */
+
+.btn:focus,
+.btn:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+@media (max-width: 575.98px) {
+}
+
+@media (max-width: 767.98px) {
+}
+
+@media (max-width: 991.98px) {
+  .custom-navbar {
+    padding: 15px 20px 30px;
+  }
+  .custom-navbar .container {
+    max-width: 100%;
+  }
+  .navbar-header {
+    display: block;
+    width: 100%;
+    margin-bottom: 22px;
+  }
+  .navbar-header .btn-icon {
+    float: left;
+  }
+  .inline-form {
+    width: 100%;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    padding: 10px 0;
+  }
+  .inline-form .dropdown {
+    display: none;
+  }
+  .inline-form .custom-form-control {
+    width: 90%;
+  }
+  .inline-form .custom-form-control {
+    width: 90%;
+  }
+  .inline-form .search-btn {
+    width: 10%;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .custom-navbar .navbar-nav li a.nav-link {
+    padding: 7px;
+  }
+}
+
+@media (max-width: 1399.98px) {
+}

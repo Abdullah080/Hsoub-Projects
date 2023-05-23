@@ -14,7 +14,7 @@
           <div class="container px-0">
             <div class="navbar-header">
               <button
-                class="navbar-toggler"
+                class="navbar-toggler btn btn-icon"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#navbarCollapse"
@@ -22,13 +22,16 @@
                 aria-expanded="false"
                 aria-label="Toggle navigation"
               >
-                <span class="navbar-toggler-icon"></span>
+                <i class="fas fa-bars fa-xl"></i>
               </button>
+              <a class="btn-icon btn d-lg-none" href="./checkout.html">
+                <i class="fa-solid fa-cart-shopping"></i>
+              </a>
               <a href="#" class="me-5">
                 <img src="./images/logo.png" alt="متجر عربي" />
               </a>
             </div>
-            <form class="d-flex">
+            <form class="d-flex inline-form">
               <input type="search" class="form-control custom-form-control" placeholder="كلمة البحث .." />
               <div class="dropdown">
                 <a href="#" class="nav-link dropdown-toggle custom-btn categories" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> اختر فئة </a>
@@ -81,7 +84,7 @@
                   <a href="./contact.html" class="nav-link">تواصل معنا</a>
                 </li>
                 <li class="mt-2">
-                  <a class="btn-icon btn" id="btn-shopping-cart" href="./checkout.html" data-bs-toggle="tooltip" data-bs-placement="bottom" title="عربة الشراء">
+                  <a class="btn-icon btn d-none d-lg-block" id="btn-shopping-cart" href="./checkout.html" data-bs-toggle="tooltip" data-bs-placement="bottom" title="عربة الشراء">
                     <i class="fa-solid fa-cart-shopping"></i>
                   </a>
                 </li>
