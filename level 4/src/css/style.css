@@ -581,10 +581,6 @@ body {
     font-weight: 400;
     margin-top: 8px;
   }
-  /*  */
-  .custom-thumbnail img {
-    height: 250px;
-  }
   #carousel-most-sold-alternative .custom-thumbnail img {
     margin: auto;
   }
@@ -643,6 +639,11 @@ body {
     max-width: 100%;
     padding: 0 20px;
     width: 100%;
+  }
+  /* Demo */
+  .custom-thumbnail img {
+    height: 250px;
+    margin: auto;
   }
 }
 
