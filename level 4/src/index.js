@@ -17,6 +17,7 @@ buttons.forEach((buttons) => {
 // Current Year
 document.getElementById("copyright").innerHTML = "جميع الحقوق محفوظة للمتجر سنة" + " " + new Date().getFullYear();
 
+// 
 document.querySelectorAll('.size-option input[type="radio"]').forEach((item) => {
   item.addEventListener("change", () => {
     document.querySelectorAll(".size-option").forEach((i) => {
