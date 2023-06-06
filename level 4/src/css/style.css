@@ -511,6 +511,60 @@ body {
   margin-bottom: 5px;
 }
 
+/* 
+---- Checkout ---- 
+*/
+.custom-media img {
+  width: 80px;
+  height: 80px;
+  border: 1px solid #ebebeb;
+  margin-left: 10px;
+}
+.custom-table th,
+.custom-table td {
+  padding: 15px;
+  font-size: 120%;
+  vertical-align: middle;
+  border-bottom: 1px solid #ebebeb;
+  border-top: 1px solid #ebebeb;
+}
+.custom-table h4 {
+  font-size: 18px;
+  margin: 12px 0;
+}
+.custom-table th {
+  color: #c2c2c2;
+  font-weight: 400;
+}
+.custom-table th:first-child,
+.custom-table td:first-child {
+  width: 50%;
+}
+.custom-table th:not(:first-child),
+.custom-table td:not(:first-child) {
+  text-align: center;
+}
+h1.custom-heading {
+  font-size: 36px;
+  margin-bottom: 25px;
+}
+.custom-table tfoot td {
+  border-bottom: none;
+  font-size: 150%;
+}
+#total-price-for-all-product {
+  color: black;
+}
+.custom-btn-outline-danger {
+  background-color: transparent;
+  color: #ff3950;
+  border-color: #ff3950;
+}
+.custom-btn-outline-danger:hover {
+  background-color: transparent;
+  border-color: #b9001b;
+  color: #b9001b;
+}
 @media (max-width: 1399.98px) {
 }
 
