@@ -45,13 +45,27 @@ document.querySelectorAll("[data-product-quantity]").forEach((item) => {
     parent.querySelector(".total-price-per-product").innerHTML = totalPriceForProduct + "$";
 
     // Total Price
-    let totalPriceForAllProduct = 0;
-    document.querySelectorAll("[data-product-info]").forEach((product) => {
-      const pricePerUnit = product.getAttribute("data-product-price");
-      const quantity = product.querySelector("[data-product-quantity]").value;
-      const totalPriceForProduct = pricePerUnit * quantity;
-      totalPriceForAllProduct += totalPriceForProduct;
-    });
-    document.getElementById("total-price-for-all-product").innerHTML = totalPriceForAllProduct + "$";
+    calculateTotalPrice()
+  });
+});
+
+function calculateTotalPrice() {
+  let totalPriceForAllProduct = 0;
+  document.querySelectorAll("[data-product-info]").forEach((product) => {
+    const pricePerUnit = product.getAttribute("data-product-price");
+    const quantity = product.querySelector("[data-product-quantity]").value;
+    const totalPriceForProduct = pricePerUnit * quantity;
+    totalPriceForAllProduct += totalPriceForProduct;
+  });
+  document.getElementById("total-price-for-all-product").innerHTML = totalPriceForAllProduct + "$";
+}
+
+// Remove When click
+document.querySelectorAll("[data-remove-from-card]").forEach((item) => {
+  item.addEventListener("click", () => {
+    item.closest("[data-product-info]").remove();
+
+    // Total Price
+    calculateTotalPrice()
   });
 });

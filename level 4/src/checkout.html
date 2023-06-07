@@ -105,7 +105,8 @@
           </ol>
         </div>
         <!-- End Breadcrumb -->
-        <!-- Start Checkout -->
+        <div class="borders-between">
+          <!-- Start Checkout -->
         <div class="row">
           <h1 class="heading custom-heading">عربة الشراء</h1>
           <form action="./payment.html" id="form-checkout">
@@ -140,7 +141,7 @@
                   </td>
                   <td class="total-price-per-product">400$</td>
                   <td>
-                    <button class="btn custom-btn-outline-danger">حذف</button>
+                    <button class="btn custom-btn-outline-danger" data-remove-from-card>حذف</button>
                   </td>
                 </tr>
                 <tr data-product-info data-product-price="200">
@@ -163,7 +164,7 @@
                   </td>
                   <td class="total-price-per-product">200$</td>
                   <td>
-                    <button class="btn custom-btn-outline-danger">حذف</button>
+                    <button class="btn custom-btn-outline-danger" data-remove-from-card>حذف</button>
                   </td>
                 </tr>
               </tbody>
@@ -177,6 +178,12 @@
                 </tr>
               </tfoot>
             </table>
+            <button type="submit" class="btn custom-btn-warning custom-btn-with-icon ms-3 mb-4">
+              <span>
+                اكمال عملية الشراء
+                <i class="fas fa-dollar-sign fa-lg"></i>
+              </span>
+            </button>
           </form>
         </div>
         <!-- End Checkout -->
@@ -296,6 +303,7 @@
           </div>
         </div>
         <!-- End Seggestions -->
+        </div>
       </div>
       <!-- Start Footer -->
       <footer class="row">
