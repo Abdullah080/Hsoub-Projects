@@ -565,6 +565,18 @@ h1.custom-heading {
   border-color: #b9001b;
   color: #b9001b;
 }
+
+/* 
+---- Payment ---- 
+*/
+.custom-input-details {
+  border-radius: 3px;
+  border-width: 2px;
+  height: 46px !important;
+  padding: 0 16px;
+  font-size: 18px;
+  width: 98%;
+}
 @media (max-width: 1399.98px) {
 }
 

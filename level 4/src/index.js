@@ -45,7 +45,7 @@ document.querySelectorAll("[data-product-quantity]").forEach((item) => {
     parent.querySelector(".total-price-per-product").innerHTML = totalPriceForProduct + "$";
 
     // Total Price
-    calculateTotalPrice()
+    calculateTotalPrice();
   });
 });
 
@@ -66,6 +66,56 @@ document.querySelectorAll("[data-remove-from-card]").forEach((item) => {
     item.closest("[data-product-info]").remove();
 
     // Total Price
-    calculateTotalPrice()
+    calculateTotalPrice();
   });
 });
+
+// ---- Payment ----
+const citiesByCountry = {
+  sa: ["جدة", "رياض"],
+  eg: ["القاهرة", "الاسكندرية"],
+  jo: ["عمان", "الزرقاء"],
+  sy: ["دمشق", "حلب"],
+};
+document.querySelectorAll("select[name='country']").forEach((item) => {
+  item.addEventListener("change", () => {
+    const country = item.value;
+
+    const cities = citiesByCountry[country];
+
+    document.querySelectorAll("#paymentcities option").forEach((option) => option.remove());
+
+    const firstOption = document.createElement("option");
+    const optionText = document.createTextNode("اختر المدينة");
+    firstOption.appendChild(optionText);
+    firstOption.setAttribute("value", "");
+    firstOption.setAttribute("disabled", "true");
+    firstOption.setAttribute("selected", "true");
+
+    const cityOptions = document.getElementById("paymentcities");
+    cityOptions.appendChild(firstOption);
+
+    cities.forEach((city) => {
+      const newOption = document.createElement("option");
+      const optionText = document.createTextNode(city);
+      newOption.appendChild(optionText);
+      newOption.setAttribute("value", city);
+      cityOptions.appendChild(newOption);
+    });
+  });
+});
+
+// Remove When click
+let paymentMethod = document.querySelectorAll("form [name='payment-method']");
+let creditCardInfoinfo = document.getElementById("credit_card_info");
+
+paymentMethod.forEach(radioButton => {
+  radioButton.addEventListener("change", () => {
+    if (paymentMethod[1].checked) {
+      creditCardInfoinfo.style.display = "none";
+    } else {
+      creditCardInfoinfo.style.display = "flex";
+    }
+  });
+});
+
