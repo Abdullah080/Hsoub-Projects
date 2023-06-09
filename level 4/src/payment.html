@@ -183,6 +183,89 @@
               </div>
             </div>
           </div>
+          <div class="mt-4">
+            <h2 class="heading">طلبك</h2>
+            <table class="custom-table">
+              <thead>
+                <tr>
+                  <th>المنتج</th>
+                  <th>السعر</th>
+                  <th>العدد المطلوب</th>
+                  <th class="d-none d-md-block">السعر الإجمالي</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr data-product-info data-product-price="400">
+                  <td>
+                    <div class="custom-media d-flex">
+                      <img src="./images/adidas_3.png" alt="adidas" class="d-none d-md-block" />
+                      <div>
+                        <h4>تي شيرت رجالي من لاكوست</h4>
+                        <div class="custom-text-muted">ملابس رجالي</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td>400$</td>
+                  <td>
+                    <select name="product1" class="custom-form-control quantity" data-product-quantity>
+                      <option value="1" selected>1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                    </select>
+                  </td>
+                  <td class="total-price-per-product d-none d-md-block">400$</td>
+                  <td>
+                    <button class="btn custom-btn-outline-danger" data-remove-from-card>
+                      <span class="d-none d-md-block">حذف</span>
+                      <i class="far fa-trash-alt d-md-none d-block"></i>
+                    </button>
+                  </td>
+                </tr>
+                <tr data-product-info data-product-price="200">
+                  <td>
+                    <div class="custom-media d-flex">
+                      <img src="./images/adidas_1.jpg" alt="adidas" class="d-none d-md-block" />
+                      <div>
+                        <h4>تي شيرت رجالي من لاكوست</h4>
+                        <div class="custom-text-muted">ملابس رجالي</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td>200$</td>
+                  <td>
+                    <select name="product1" class="custom-form-control quantity" data-product-quantity>
+                      <option value="1" selected>1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                    </select>
+                  </td>
+                  <td class="total-price-per-product d-none d-md-block">200$</td>
+                  <td>
+                    <button class="btn custom-btn-outline-danger" data-remove-from-card>
+                      <span class="d-none d-md-block">حذف</span>
+                      <i class="far fa-trash-alt d-md-none d-block"></i>
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td colspan="5" class="total-price custom-text-muted">
+                    <span>السعر الإجمالي لجميع المنتجات:</span>
+                    <span id="total-price-for-all-product">1600</span>
+                    <span>دولار</span>
+                  </td>
+                </tr>
+              </tfoot>
+            </table>
+            <button type="submit" class="btn custom-btn-warning custom-btn-with-icon ms-3 mb-4">
+              <span>
+                اكمال عملية الشراء
+                <i class="fas fa-dollar-sign fa-lg"></i>
+              </span>
+            </button>
+          </div>
         </form>
         <!-- End Payment Form -->
       </div>
