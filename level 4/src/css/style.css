@@ -1,8 +1,8 @@
 @font-face {
   font-family: "JF Flat Regular";
   src: url(../fonts/JF-Flat-regular.eot);
-  src: url(../fonts/JF-Flat-regular.eot?#iefix) format("embedded-opentype"), url("../fonts/JF-Flat-regular.svg#JF Flat Regular") format("svg"),
-    url(../fonts/JF-Flat-regular.woff) format("woff"), url(../fonts/JF-Flat-regular.ttf) format("truetype");
+  src: url(../fonts/JF-Flat-regular.eot?#iefix) format("embedded-opentype"), url("../fonts/JF-Flat-regular.svg#JF Flat Regular") format("svg"), url(../fonts/JF-Flat-regular.woff) format("woff"),
+    url(../fonts/JF-Flat-regular.ttf) format("truetype");
   font-weight: bolder;
   font-style: normal;
 }
@@ -213,8 +213,9 @@ body {
   margin-bottom: 25px;
 }
 .custom-thumbnail img {
-  height: 250px;
+  max-height: 250px;
   max-width: 250px;
+  width: 100%;
 }
 .custom-thumbnail {
   border: 2px solid #eef0ea;
@@ -621,7 +622,6 @@ h1.custom-heading {
   background-color: #f8ad47 !important;
   color: white !important;
   border-color: #f8ad47;
-
 }
 .custom-pagination .page-link:active,
 .custom-pagination .page-link:focus,
@@ -729,6 +729,15 @@ h1.custom-heading {
     line-height: 40px;
     margin: 10px;
     width: 40px;
+  }
+
+  /* 
+  ---- Search ----
+  */
+  .search-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
