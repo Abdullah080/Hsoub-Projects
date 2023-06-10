@@ -1,0 +1,75 @@
+.custom-form-control,
+.dropdown a.custom-btn {
+  border: 1px solid #ebebeb;
+  box-shadow: none;
+  border-radius: 2px;
+  color: #868686;
+  height: 38px;
+  padding: 6px 16px 7px;
+  transition: all 0.3s ease;
+}
+
+.custom-form-control:focus {
+  border-color: #c2101e;
+  box-shadow: 0 0 2px 0 #c2101e;
+}
+
+.dropdown a.custom-btn:hover {
+  background-color: #d4d4d4;
+  border: 1px solid #8c8c8c;
+  border-right: 0;
+  color: #ff3956;
+}
+
+.dropdown a.custom-btn:focus {
+  color: #ff3956;
+}
+
+.custom-btn-outline-warning {
+  background-color: transparent;
+  border-color: #f8ad47;
+  color: #f8ad47;
+}
+
+.custom-btn-outline-warning:hover,
+.custom-btn-outline-warning:active,
+.custom-btn-outline-warning:focus,
+.custom-btn-outline-warning:active:focus,
+.custom-btn-outline-warning:active:hover {
+  border-color: #b86d07;
+  color: #b86d07;
+}
+
+.custom-btn-warning {
+  background-color: #f8ad47;
+  border-color: #f8ad47;
+}
+
+.custom-btn-warning:active,
+.custom-btn-warning:active:focus,
+.custom-btn-warning:active:hover,
+.custom-btn-warning:focus,
+.custom-btn-warning:hover {
+  background-color: #b86d07;
+  border-color: #b86d07;
+}
+
+.custom-btn-outline-danger {
+  background-color: transparent;
+  color: #ff3950;
+  border-color: #ff3950;
+}
+
+.custom-btn-outline-danger:hover {
+  background-color: transparent;
+  border-color: #b90015;
+  color: #b90015;
+}
+
+.overlay .add-to-cart-btn {
+  background-color: #fff;
+  color: #53ccd7;
+  font-weight: 700;
+}
+
+/*# sourceMappingURL=style2.css.map */
