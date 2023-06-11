@@ -1,5 +1,7 @@
 @import "./variables";
 @import "./custom_table";
+@import "./mixins";
+@import "./custom_thumbnail";
 
 .custom-form-control,
 .dropdown a.custom-btn {
@@ -24,20 +26,9 @@
 .dropdown a.custom-btn:focus {
   color: #ff3956;
 }
-// ========
+// =======
 .custom-btn-outline-warning {
-  background-color: transparent;
-  border-color: $brand-warning;
-  color: $brand-warning;
-}
-// make it mobile friendly
-.custom-btn-outline-warning:hover,
-.custom-btn-outline-warning:active,
-.custom-btn-outline-warning:focus,
-.custom-btn-outline-warning:active:focus,
-.custom-btn-outline-warning:active:hover {
-  border-color: $btn-warning-color-dark;
-  color: $btn-warning-color-dark;
+  @include button-style($brand-warning);
 }
 // ========
 .custom-btn-warning {
@@ -55,15 +46,9 @@
 }
 // ========
 .custom-btn-outline-danger {
-  background-color: transparent;
-  color: $brand-danger;
-  border-color: $brand-danger;
+  @include button-style($brand-danger);
 }
-.custom-btn-outline-danger:hover {
-  background-color: transparent;
-  border-color: $btn-danger-color-dark;
-  color: $btn-danger-color-dark;
-}
+
 // ========
 .overlay .add-to-cart-btn {
   background-color: #fff;
