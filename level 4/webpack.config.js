@@ -4,8 +4,8 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 
 module.exports = {
-  mode: "development",
-  // mode: "production",
+  // mode: "development",
+  mode: "production",
 
   entry: {
     app: "./src/index.js",
@@ -53,10 +53,6 @@ module.exports = {
           "sass-loader",
         ],
       },
-      // {
-      //   test: /bootstrap\.scss$/i,
-      //   use: [MiniCssExtractPlugin.loader, "rtlcss-loader", "sass.loader"],
-      // },
 
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
