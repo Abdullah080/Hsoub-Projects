@@ -476,6 +476,9 @@ h1.custom-heading {
 /* 
 ---- Payment ---- 
 */
+input[type="email"] {
+  text-align: right;
+}
 .custom-input-details {
   border-radius: 3px;
   border-width: 2px;
@@ -536,6 +539,21 @@ h1.custom-heading {
   background-color: white !important;
   border-color: #f8ad47 !important;
 }
+
+/* ==== Cantact ==== */
+.contact-info i {
+  color: orange;
+  background-color: orange;
+}
+.textarea-message {
+  border-radius: 3px !important;
+  border-width: 2px !important;
+  font-size: 18px;
+  height: 102px !important;
+  padding: 0 16px !important;
+  width: 99%;
+}
+
 @media (max-width: 1199.98px) {
   .custom-navbar .navbar-nav li a.nav-link {
     padding: 7px;
