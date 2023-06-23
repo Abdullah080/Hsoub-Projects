@@ -236,6 +236,7 @@ section.statistics .overlay .stat .circle span {
   transform: translate(50%, 50%);
 }
 
+/* Start Gallery */
 section.gallery {
   padding: 75px 0 90px;
 }
@@ -268,25 +269,25 @@ section.gallery .items .item {
   margin-bottom: 25px;
   transition: all 0.5s ease;
 }
-/* ??? */
-#item-type-all:checked ~ .label-type-all,
-#item-type-1:checked ~ .label-type-1,
-#item-type-2:checked ~ .label-type-2,
-#item-type-3:checked ~ .label-type-3 {
+input#item-type-all:checked ~ label.label-type-all,
+input#item-type-1:checked ~ label.label-type-1,
+input#item-type-2:checked ~ label.label-type-2,
+input#item-type-3:checked ~ label.label-type-3 {
   color: #fff;
-  border: 2px solid var(--main-color);
   background-color: var(--main-color);
+  border: 2px solid var(--main-color);
 }
-/* ??? */
-section.gallery .items .item {
+input#item-type-all:checked ~ .items .item,
+input#item-type-1:checked ~ .items .item-type-1,
+input#item-type-2:checked ~ .items .item-type-2,
+input#item-type-3:checked ~ .items .item-type-3 {
+  transform: scale(1.08);
+  opacity: 1;
+}
+input#item-type-1:checked ~ .items .item:not(.item-type-1),
+input#item-type-2:checked ~ .items .item:not(.item-type-2),
+input#item-type-3:checked ~ .items .item:not(.item-type-3) {
   transform: scale(0.8);
   opacity: 0.5;
 }
-
-#item-type-all:checked ~ .items .item,
-#item-type-1:checked ~ .items .item.item-type-1,
-#item-type-2:checked ~ .items .item.item-type-2,
-#item-type-3:checked ~ .items .item.item-type-3 {
-  transform: scale(1);
-  opacity: 1;
-}
+/* End Gallery */
