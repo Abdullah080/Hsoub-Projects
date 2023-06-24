@@ -291,3 +291,87 @@ input#item-type-3:checked ~ .items .item:not(.item-type-3) {
   opacity: 0.5;
 }
 /* End Gallery */
+
+/* Start Contact */
+.contact {
+  background-image: url(../images/bg-3.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.contact .overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding-top: 70px;
+}
+.contact .overlay .testimonials-title h3 {
+  font-size: 30px;
+  line-height: 50px;
+  color: #fff;
+  margin-bottom: 40px;
+}
+.contact .overlay .testimonials .slider {
+  width: 65%;
+  margin: 0 auto 80px;
+}
+.contact .overlay .testimonials .slider .carousel-item {
+  min-height: 350px;
+}
+.contact .overlay .testimonials .slider .carousel-item .carousel-caption {
+  background-color: #fff;
+  width: 100%;
+  padding: 80px 70px 35px;
+  right: 0;
+}
+.contact .overlay .testimonials .slider .carousel-item .carousel-caption img {
+  position: absolute;
+  top: 0;
+  transform: translate(50%, -50%);
+}
+.contact .overlay .testimonials .slider .carousel-item .carousel-caption h4 {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 15px;
+}
+.contact .overlay .testimonials .slider .carousel-item .carousel-caption h4 span {
+  font-size: 15px;
+  color: #9c9c9c;
+}
+.contact .overlay .testimonials .slider .carousel-item .carousel-caption p {
+  font-size: 15px;
+  line-height: 22px;
+  color: #b1b1b1;
+  margin-bottom: 25px;
+}
+.contact .overlay .testimonials .slider .carousel-item .carousel-caption li a {
+  font-size: 24px;
+  color: #b2d8fe;
+  transition: all 0.5s ease;
+}
+.contact .overlay .testimonials .slider .carousel-item .carousel-caption li a:hover {
+  color: #0575e6;
+}
+.contact .overlay .testimonials .carousel-indicators {
+  bottom: -5px;
+}
+.contact .overlay .testimonials .carousel-indicators button {
+  width: 15px;
+  height: 15px;
+  border: 1px solid #0575e6;
+  background-color: #fff;
+}
+.contact .overlay .testimonials .carousel-indicators button.active {
+  background-color: #0575e6;
+}
+.contact .overlay .testimonials .carousel-control-next i,
+.contact .overlay .testimonials .carousel-control-prev i {
+  padding: 10px 20px;
+  background-color: #0575e6;
+  border-radius: 50%;
+}
+.contact .overlay .testimonials .carousel-control-next  {
+  transform: translateX(-50%);
+}
+.contact .overlay .testimonials .carousel-control-prev  {
+  transform: translateX(50%);
+}
+
+/* End Contact */
