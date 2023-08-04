@@ -367,11 +367,38 @@ input#item-type-3:checked ~ .items .item:not(.item-type-3) {
   background-color: #0575e6;
   border-radius: 50%;
 }
-.contact .overlay .testimonials .carousel-control-next  {
+.contact .overlay .testimonials .carousel-control-next {
   transform: translateX(-50%);
 }
-.contact .overlay .testimonials .carousel-control-prev  {
+.contact .overlay .testimonials .carousel-control-prev {
   transform: translateX(50%);
 }
 
+.contact .contact-info {
+  background-color: #fff;
+  padding: 50px;
+}
+.contact .contact-info .contact-title h3 {
+  font-size: 30px;
+  color: var(--main-color);
+  line-height: 50px;
+  margin-bottom: 35px;
+}
+.contact .contact-info {
+  background-color: #fff;
+  padding: 50px;
+}
+.contact .contact-info input,
+.contact .contact-info textarea {
+  border: 2px solid #f1f1f1;
+  border-radius: 3px;
+  font-size: 18px;
+  color: #c2c2c2;
+  line-height: 35px;
+  padding-right: 45px;
+  text-align: right;
+}
+.contact .contact-info input {
+  margin-bottom: 15px;
+}
 /* End Contact */

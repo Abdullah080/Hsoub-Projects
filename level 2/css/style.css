@@ -1,12 +1,16 @@
 .navbar .login {
   color: #bf40bf;
 }
-.fixed-top {
-  position: relative;
-}
+
 .w-30px {
   width: 30px;
 }
+
 a {
   text-decoration: none;
+}
+
+.card .card-title {
+  height: 50px;
+  overflow: hidden;
 }
